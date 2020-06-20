@@ -1,6 +1,10 @@
-require "starwars_characters/version"
+require_relative "./starwars_characters/version"
+require 'pry'
+require 'httparty'
+
+require_relative './API'
 
 module StarwarsCharacters
-  class Error < StandardError; end
+  
   # Your code goes here...
 end
