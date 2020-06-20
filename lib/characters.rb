@@ -1,6 +1,12 @@
 class StarwarsCharacters::Characters 
-
+    attr_accessor :name, :url
+    
     @@all = []
+
+    def initialize(name, url)
+        @name, @url = name, url
+        save 
+    end
 
     def self.all
         @@all
@@ -10,13 +16,6 @@ class StarwarsCharacters::Characters
        swarr.each do |swhash|
          self.new(swhash["name"], swhash["url"])
        end
-    end
-
-    attr_accessor :name, :url
-
-    def initialize(name, url)
-        @name, @url = name, url
-        save 
     end
 
     def save
