@@ -5,3 +5,4 @@ require_relative '../lib/environment'
 puts "in the binrary executable"
 
 StarwarsCharacters::API.get_characters
+binding.pry
