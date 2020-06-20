@@ -22,19 +22,19 @@ class StarwarsCharacters::CLI
             menu
         end
         puts "in main loop"
-        binding.pry
+        #binding.pry
     end
 
     def menu 
         display_characters
         #display_instructions
-        #binding.pry
+        binding.pry
     end
 
     def display_characters
-        characters = StarwarsCharacters::Characters.a;;
-        characters.each do |sw|
-            puts sw.nme
+        characters = StarwarsCharacters::Characters.all
+        characters.each.with_index(1) do |sw, index|
+            puts "#{index}. #{sw.name}"
         end
     end
 end
