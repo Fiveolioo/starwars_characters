@@ -12,4 +12,19 @@ class StarwarsCharacters::API
       StarwarsCharacters::Characters.mass_create_from_api(swarr)
     end
 
+    def self.get_character_details(character)
+        puts "\nMAKING A NETWORK REQUEST.....\n"
+
+        url = character.url
+        res = HTTParty.get(url)
+        character.height = res["height"]
+        character.gender = res["gender"]
+        character.hair_color = res["hair_color"]
+        character.skin_color = res["skin_color"]
+        character.eye_color = res ["eye_color"]
+        character.birth_year = res["birth_year"]
+
+
+    end
+
 end

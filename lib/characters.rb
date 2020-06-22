@@ -1,5 +1,5 @@
 class StarwarsCharacters::Characters 
-    attr_accessor :name, :url
+    attr_accessor :name, :url, :height, :gender, :hair_color, :skin_color, :eye_color, :birth_year
     
     @@all = []
 

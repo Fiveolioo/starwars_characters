@@ -21,7 +21,7 @@ class StarwarsCharacters::CLI
         input = gets.strip.downcase
         return input if input == "exit"
         if input.to_i.between?(1, StarwarsCharacters::Characters.all.length)
-            return input.to_i
+            return input.to_i - 1
         else 
             puts "What's that?"
             return "Invalid"
@@ -39,7 +39,7 @@ class StarwarsCharacters::CLI
                 next
             else
                 puts input
-                #display_single_character(input)
+                display_single_character(input)
             end
         end
         puts "in main loop"
@@ -56,6 +56,12 @@ class StarwarsCharacters::CLI
         characters.each.with_index(1) do |sw, index|
             puts "#{index}. #{sw.name}"
         end
+    end
+
+    def display_single_character(i)
+        char_obj = StarwarsCharacters::Characters.all[i]
+        StarwarsCharacters::API.get_character_details(char_obj)
+        binding.pry
     end
 
     def display_instructions
