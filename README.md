@@ -1,10 +1,9 @@
-# StarwarsCharacters
+#Star Wars Characters
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/starwars_characters`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to my Star Wars character project! Here you will find a list of characters from Star Wars and click to see what description they have! Hope you have fun and interest with the characters listed.
 
-TODO: Delete this and the text above, and describe your gem
 
-## Installation
+##Installation
 
 Add this line to your application's Gemfile:
 
@@ -22,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run "bin/starwars_characters" to start using this CLI
 
 ## Development
 
@@ -42,3 +41,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the StarwarsCharacters project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/<github username>/starwars_characters/blob/master/CODE_OF_CONDUCT.md).
+
+## Acknowledgments
+
+Big help from Avi(Instructor) and Lantz(Instructor) for all the great ideas to use in my code.
