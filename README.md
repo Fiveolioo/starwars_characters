@@ -1,9 +1,9 @@
-#Star Wars Characters
+# Star Wars Characters
 
 Welcome to my Star Wars character project! Here you will find a list of characters from Star Wars and click to see what description they have! Hope you have fun and interest with the characters listed.
 
 
-##Installation
+## Installation
 
 Add this line to your application's Gemfile:
 
