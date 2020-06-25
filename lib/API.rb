@@ -4,7 +4,7 @@ class StarwarsCharacters::API
     
 
     def self.get_characters
-        puts "STAR WARS"
+        puts "STAR WARS\n\n"
         url = BASE_URL + "people"
         res = HTTParty.get(url)
         swarr = res["results"]

@@ -40,11 +40,9 @@ class StarwarsCharacters::CLI
             when "invalid"
                 next
             else
-                puts input
                 display_single_character(input)
             end
         end
-        puts "in main loop"
     end
 
     def menu 
@@ -63,7 +61,7 @@ class StarwarsCharacters::CLI
         char_obj = StarwarsCharacters::Characters.all[i]
         StarwarsCharacters::API.get_character_details(char_obj)
         puts char_obj.details
-        puts "Press enter for more options!"
+        puts "Press 'enter' for more options!"
         gets
     end
 
